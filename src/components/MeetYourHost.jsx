@@ -12,7 +12,7 @@ export default function MeetYourHost() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-28 bg-[#F5EFE6]">
+    <section className="py-20 md:py-28 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -32,7 +32,7 @@ export default function MeetYourHost() {
                 loading="lazy"
               />
               {/* Terracotta accent strip on the left edge */}
-              <div className="absolute top-0 left-0 w-1.5 h-full bg-[#C1674A]" />
+              <div className="absolute top-0 left-0 w-1.5 h-full bg-primary" />
             </div>
           </motion.div>
 
@@ -45,25 +45,25 @@ export default function MeetYourHost() {
             className="order-2"
           >
             {/* Accent line */}
-            <div className="w-10 h-0.5 bg-[#C1674A] mb-6" />
+            <div className="w-10 h-0.5 bg-primary mb-6" />
 
             {/* Section label */}
-            <p className="text-[#C1674A] text-xs uppercase tracking-[0.2em] mb-3 font-medium">
+            <p className="text-primary text-xs uppercase tracking-[0.2em] mb-3 font-medium">
               {t('meetYourHost.heading')}
             </p>
 
             {/* Host name */}
-            <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl font-semibold text-[#2C2C2C] mb-2">
+            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-text mb-2">
               {t('meetYourHost.name')}
             </h2>
 
             {/* Professional title */}
-            <p className="text-[#D4A96A] text-sm font-medium mb-6 italic">
+            <p className="text-accent text-sm font-medium mb-6 italic">
               {t('meetYourHost.title')}
             </p>
 
             {/* Bio paragraphs */}
-            <div className="flex flex-col gap-4 text-[#2C2C2C]/80 leading-relaxed">
+            <div className="flex flex-col gap-4 text-text/80 leading-relaxed">
               <p className="text-base md:text-lg">
                 "{t('meetYourHost.bio')}"
               </p>
@@ -73,7 +73,7 @@ export default function MeetYourHost() {
             </div>
 
             {/* Decorative quote mark */}
-            <div className="mt-8 font-['Playfair_Display'] text-6xl text-[#EAD9C6] leading-none select-none">
+            <div className="mt-8 font-heading text-6xl text-surface leading-none select-none">
               ❝
             </div>
           </motion.div>

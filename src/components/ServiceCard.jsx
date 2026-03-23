@@ -27,37 +27,37 @@ export default function ServiceCard({
 }) {
   return (
     <div
-      className={`bg-white rounded-sm flex flex-col ${
+      className={`bg-surface rounded-sm flex flex-col ${
         variant === 'full' ? 'p-6 md:p-8' : 'p-6'
       } shadow-sm hover:shadow-md transition-shadow duration-300 group`}
     >
       {/* Icon — rendered large on the full variant */}
       {icon && (
-        <div className={`mb-4 text-[#C1674A] ${variant === 'full' ? 'text-4xl' : 'text-3xl'}`}>
+        <div className={`mb-4 text-primary ${variant === 'full' ? 'text-4xl' : 'text-3xl'}`}>
           {icon}
         </div>
       )}
 
       {/* Service name */}
-      <h3 className="font-['Playfair_Display'] text-lg md:text-xl font-semibold text-[#2C2C2C] mb-2 group-hover:text-[#C1674A] transition-colors duration-200">
+      <h3 className="font-heading text-lg md:text-xl font-semibold text-text mb-2 group-hover:text-primary transition-colors duration-200">
         {name}
       </h3>
 
       {/* Description */}
-      <p className="text-sm text-[#2C2C2C]/70 leading-relaxed flex-1 mb-4">
+      <p className="text-sm text-text/70 leading-relaxed flex-1 mb-4">
         {description}
       </p>
 
       {/* Duration + price row */}
       <div className="flex items-center justify-between mt-auto">
         {/* Duration badge */}
-        <span className="text-xs font-medium bg-[#EAD9C6] text-[#2C2C2C]/70 px-3 py-1 rounded-full">
+        <span className="text-xs font-medium bg-background text-text/70 px-3 py-1 rounded-full">
           {duration}
         </span>
 
         {/* Price (shown only when provided) */}
         {price && (
-          <span className="text-sm font-semibold text-[#C1674A]">
+          <span className="text-sm font-semibold text-primary">
             {price}
           </span>
         )}
@@ -69,7 +69,7 @@ export default function ServiceCard({
           href={bookUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-5 block text-center bg-[#C1674A] text-white py-2.5 text-sm font-medium tracking-wide hover:bg-[#a85539] transition-colors duration-200 rounded-sm"
+          className="mt-5 block text-center bg-primary text-white py-2.5 text-sm font-medium tracking-wide hover:opacity-90 transition-opacity duration-200 rounded-sm"
         >
           {bookLabel}
         </a>

@@ -54,7 +54,7 @@ export default function Hero() {
         {/* Small uppercase label */}
         <motion.p
           variants={itemVariants}
-          className="text-[#D4A96A] text-xs md:text-sm uppercase tracking-[0.25em] mb-4 font-medium"
+          className="text-accent text-xs md:text-sm uppercase tracking-[0.25em] mb-4 font-medium"
         >
           {t('hero.label')}
         </motion.p>
@@ -62,7 +62,7 @@ export default function Hero() {
         {/* Main heading in Playfair Display */}
         <motion.h1
           variants={itemVariants}
-          className="font-['Playfair_Display'] text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-tight mb-5"
+          className="font-heading text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-tight mb-5"
         >
           {t('hero.heading')}
         </motion.h1>
@@ -81,7 +81,7 @@ export default function Hero() {
             href={TREATWELL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#C1674A] text-white px-8 py-3.5 text-sm font-medium tracking-wider uppercase hover:bg-[#a85539] transition-colors duration-300 rounded-sm"
+            className="inline-block bg-primary text-white px-8 py-3.5 text-sm font-medium tracking-wider uppercase hover:opacity-90 transition-opacity duration-300 rounded-sm"
           >
             {t('hero.cta')}
           </a>

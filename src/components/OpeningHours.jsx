@@ -34,7 +34,7 @@ export default function OpeningHours() {
   ]
 
   return (
-    <section className="py-20 md:py-28 bg-[#EAD9C6]">
+    <section className="py-20 md:py-28 bg-surface">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
 
         <motion.div
@@ -45,37 +45,37 @@ export default function OpeningHours() {
         >
           {/* Section heading */}
           <div className="text-center mb-10">
-            <div className="w-10 h-0.5 bg-[#C1674A] mx-auto mb-5" />
-            <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl font-semibold text-[#2C2C2C] flex items-center justify-center gap-3">
-              <Clock size={28} className="text-[#C1674A]" />
+            <div className="w-10 h-0.5 bg-primary mx-auto mb-5" />
+            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-text flex items-center justify-center gap-3">
+              <Clock size={28} className="text-primary" />
               {t('openingHours.heading')}
             </h2>
           </div>
 
           {/* Hours table card */}
-          <div className="bg-[#F5EFE6] rounded-sm shadow-sm overflow-hidden">
+          <div className="bg-background rounded-sm shadow-sm overflow-hidden">
             {hours.map((row, index) => (
               <div
                 key={row.day}
                 className={`flex items-center justify-between px-5 py-4 ${
-                  index < hours.length - 1 ? 'border-b border-[#EAD9C6]' : ''
+                  index < hours.length - 1 ? 'border-b border-surface' : ''
                 } ${row.isClosed ? 'opacity-50' : ''}`}
               >
                 {/* Day name */}
-                <span className="text-sm font-medium text-[#2C2C2C] w-28 shrink-0">
+                <span className="text-sm font-medium text-text w-28 shrink-0">
                   {row.day}
                 </span>
 
                 {/* Flexible middle spacer */}
-                <span className="flex-1 mx-4 h-px bg-[#EAD9C6] hidden sm:block" />
+                <span className="flex-1 mx-4 h-px bg-surface hidden sm:block" />
 
                 {/* Time + optional note */}
                 <div className="text-right">
-                  <span className={`text-sm ${row.isClosed ? 'text-[#2C2C2C]/60' : 'text-[#2C2C2C] font-medium'}`}>
+                  <span className={`text-sm ${row.isClosed ? 'text-text/60' : 'text-text font-medium'}`}>
                     {row.time}
                   </span>
                   {row.note && (
-                    <span className="ml-2 text-xs bg-[#C1674A] text-white px-2 py-0.5 rounded-full">
+                    <span className="ml-2 text-xs bg-primary text-white px-2 py-0.5 rounded-full">
                       {row.note}
                     </span>
                   )}
@@ -85,7 +85,7 @@ export default function OpeningHours() {
           </div>
 
           {/* Appointment note */}
-          <p className="text-center text-sm text-[#2C2C2C]/70 mt-6 leading-relaxed">
+          <p className="text-center text-sm text-text/70 mt-6 leading-relaxed">
             {t('openingHours.appointmentNote')}
           </p>
 
@@ -93,7 +93,7 @@ export default function OpeningHours() {
           <div className="mt-6 text-center">
             <a
               href="tel:+4917793265150"
-              className="inline-flex items-center gap-2 bg-[#C1674A] text-white px-6 py-3 rounded-sm text-sm font-medium hover:bg-[#a85539] transition-colors duration-200"
+              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-sm text-sm font-medium hover:opacity-90 transition-opacity duration-200"
             >
               <Phone size={16} />
               0177 93 26 515
