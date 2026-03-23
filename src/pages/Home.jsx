@@ -1,37 +1,30 @@
+import Hero from '../components/pages/Hero';
+import IntroStrip from '../components/pages/IntroStrip';
+import ServicesPreview from '../components/pages/ServicesPreview';
+import MustafaTeaser from '../components/pages/MustafaTeaser';
+import OpeningHours from '../components/pages/OpeningHours';
+import Testimonials from '../components/pages/Testimonials';
+
 /**
- * Home.jsx
- * Landing page (/) for Hamam Braunschweig.
- * Sections in order:
- *   1. Hero — full-viewport hero with tagline and CTA
- *   2. WhatIsHamam — two-column editorial about the Ottoman bath tradition
- *   3. ServiceTeaser — three featured services in staggered cards
- *   4. OpeningHours — weekly schedule with appointment note
- *   5. MeetYourHost — personal intro for Saliha-Nur Erden
+ * Home - Landing page
+ *
+ * Combines all home page sections:
+ * - Hero banner
+ * - Introduction
+ * - Service preview
+ * - Mustafa teaser
+ * - Opening hours
+ * - Customer testimonials
  */
-
-import Hero from '../components/Hero'
-import WhatIsHamam from '../components/WhatIsHamam'
-import ServiceTeaser from '../components/ServiceTeaser'
-import OpeningHours from '../components/OpeningHours'
-import MeetYourHost from '../components/MeetYourHost'
-
 export default function Home() {
   return (
-    <>
-      {/* 1. Full-viewport hero */}
+    <main>
       <Hero />
-
-      {/* 2. Educational section on the Hamam tradition */}
-      <WhatIsHamam />
-
-      {/* 3. Three featured service teasers */}
-      <ServiceTeaser />
-
-      {/* 4. Weekly opening hours table */}
+      <IntroStrip />
+      <ServicesPreview />
+      <MustafaTeaser />
       <OpeningHours />
-
-      {/* 5. Owner introduction */}
-      <MeetYourHost />
-    </>
-  )
+      <Testimonials />
+    </main>
+  );
 }
