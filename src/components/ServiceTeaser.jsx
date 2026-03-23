@@ -52,7 +52,7 @@ export default function ServiceTeaser() {
   ]
 
   return (
-    <section className="py-20 md:py-28 bg-[#EAD9C6]">
+    <section className="py-20 md:py-28 bg-surface">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Section heading */}
@@ -63,8 +63,8 @@ export default function ServiceTeaser() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <div className="w-10 h-0.5 bg-[#C1674A] mx-auto mb-5" />
-          <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl font-semibold text-[#2C2C2C]">
+          <div className="w-10 h-0.5 bg-primary mx-auto mb-5" />
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-text">
             {t('serviceTeaser.heading')}
           </h2>
         </motion.div>
@@ -94,7 +94,7 @@ export default function ServiceTeaser() {
         >
           <Link
             to="/services"
-            className="inline-block border border-[#C1674A] text-[#C1674A] px-6 py-2.5 text-sm font-medium tracking-wide hover:bg-[#C1674A] hover:text-white transition-colors duration-200 rounded-sm"
+            className="inline-block border border-primary text-primary px-6 py-2.5 text-sm font-medium tracking-wide hover:bg-primary hover:text-white transition-colors duration-200 rounded-sm"
           >
             {t('serviceTeaser.seeAll')} →
           </Link>

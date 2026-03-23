@@ -36,13 +36,13 @@ export default function Navbar() {
   const navLinkClass = ({ isActive }) =>
     `transition-colors duration-200 font-medium text-sm tracking-wide ${
       isActive
-        ? 'text-[#C1674A]'
-        : 'text-[#2C2C2C] hover:text-[#C1674A]'
+        ? 'text-primary'
+        : 'text-text hover:text-primary'
     }`
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-[#F5EFE6]/90 backdrop-blur-md transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md transition-shadow duration-300 ${
         scrolled ? 'shadow-md' : 'shadow-none'
       }`}
     >
@@ -52,7 +52,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             to="/"
-            className="font-['Playfair_Display'] text-lg md:text-xl font-semibold text-[#2C2C2C] hover:text-[#C1674A] transition-colors"
+            className="font-heading text-lg md:text-xl font-semibold text-text hover:text-primary transition-colors"
             onClick={closeMenu}
           >
             Hamam Braunschweig
@@ -73,7 +73,7 @@ export default function Navbar() {
               href={TREATWELL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#C1674A] text-white px-4 py-2 rounded-sm text-sm font-medium tracking-wide hover:bg-[#a85539] transition-colors duration-200"
+              className="bg-primary text-white px-4 py-2 rounded-sm text-sm font-medium tracking-wide hover:opacity-90 transition-opacity duration-200"
             >
               {t('nav.bookNow')}
             </a>
@@ -81,7 +81,7 @@ export default function Navbar() {
 
           {/* Mobile: hamburger button */}
           <button
-            className="md:hidden p-2 text-[#2C2C2C] hover:text-[#C1674A] transition-colors"
+            className="md:hidden p-2 text-text hover:text-primary transition-colors"
             onClick={() => setMenuOpen((v) => !v)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -92,20 +92,20 @@ export default function Navbar() {
 
       {/* Mobile slide-down menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#F5EFE6]/95 backdrop-blur-md border-t border-[#EAD9C6] px-4 py-6 flex flex-col gap-5">
+        <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-surface px-4 py-6 flex flex-col gap-5">
           <nav className="flex flex-col gap-4">
             <NavLink to="/" end className={navLinkClass} onClick={closeMenu}>{t('nav.home')}</NavLink>
             <NavLink to="/services" className={navLinkClass} onClick={closeMenu}>{t('nav.services')}</NavLink>
             <NavLink to="/contact" className={navLinkClass} onClick={closeMenu}>{t('nav.contact')}</NavLink>
             <NavLink to="/voucher" className={navLinkClass} onClick={closeMenu}>{t('nav.voucher')}</NavLink>
           </nav>
-          <div className="flex items-center justify-between pt-4 border-t border-[#EAD9C6]">
+          <div className="flex items-center justify-between pt-4 border-t border-surface">
             <LanguageToggle />
             <a
               href={TREATWELL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#C1674A] text-white px-4 py-2 rounded-sm text-sm font-medium tracking-wide hover:bg-[#a85539] transition-colors duration-200"
+              className="bg-primary text-white px-4 py-2 rounded-sm text-sm font-medium tracking-wide hover:opacity-90 transition-opacity duration-200"
               onClick={closeMenu}
             >
               {t('nav.bookNow')}

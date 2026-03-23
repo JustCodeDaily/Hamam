@@ -17,16 +17,16 @@ export default function VoucherCTA() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="mt-14 bg-[#EAD9C6] rounded-sm px-6 py-8 text-center max-w-2xl mx-auto"
+      className="mt-14 bg-surface rounded-sm px-6 py-8 text-center max-w-2xl mx-auto"
     >
       {/* Delivery note */}
-      <Mail size={24} className="text-[#C1674A] mx-auto mb-4" />
+      <Mail size={24} className="text-primary mx-auto mb-4" />
 
-      <p className="text-[#2C2C2C] font-medium mb-2">
+      <p className="text-text font-medium mb-2">
         {t('voucher.cta.note')}
       </p>
 
-      <p className="text-[#2C2C2C]/60 text-sm">
+      <p className="text-text/60 text-sm">
         {t('voucher.cta.subNote')}
       </p>
     </motion.div>
