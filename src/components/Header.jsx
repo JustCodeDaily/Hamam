@@ -7,8 +7,8 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-gray-900 py-4 px-6">
-      <div className="max-w-7xl mx-auto flex items-center justify-between gap-8">
+    <header className="sticky top-0 w-full z-50 bg-hamam-dark-nav border-b border-hamam-dark-border/50 shadow-lg shadow-black/20">
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-8">
         {/* Logo */}
         <div className="text-2xl font-bold text-white flex-shrink-0">
           Hamam Braunschweig
