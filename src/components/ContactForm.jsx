@@ -32,7 +32,7 @@ export default function ContactForm() {
 
   // Shared input/textarea styles
   const inputClass =
-    'w-full bg-[#F5EFE6] border border-[#EAD9C6] rounded-sm px-4 py-3 text-sm text-[#2C2C2C] placeholder-[#2C2C2C]/40 focus:outline-none focus:border-[#C1674A] focus:ring-1 focus:ring-[#C1674A] transition-colors duration-200'
+    'w-full bg-background border border-surface rounded-sm px-4 py-3 text-sm text-text placeholder-text/40 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-200'
 
   return (
     <motion.div
@@ -40,9 +40,9 @@ export default function ContactForm() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="bg-white rounded-sm p-6 md:p-8 shadow-sm"
+      className="bg-surface rounded-sm p-6 md:p-8 shadow-sm"
     >
-      <h3 className="font-['Playfair_Display'] text-xl font-semibold text-[#2C2C2C] mb-6">
+      <h3 className="font-heading text-xl font-semibold text-text mb-6">
         {t('contact.form.heading')}
       </h3>
 
@@ -57,17 +57,17 @@ export default function ContactForm() {
             transition={{ duration: 0.4 }}
             className="flex flex-col items-center text-center py-8 gap-4"
           >
-            <CheckCircle size={48} className="text-[#C1674A]" />
-            <p className="text-[#2C2C2C] font-medium text-base">
+            <CheckCircle size={48} className="text-primary" />
+            <p className="text-text font-medium text-base">
               {t('contact.form.success')}
             </p>
-            <p className="text-[#2C2C2C]/60 text-sm">
+            <p className="text-text/60 text-sm">
               {t('contact.form.successSubtext')}
             </p>
             {/* Allow sending another message */}
             <button
               onClick={() => setSubmitted(false)}
-              className="mt-2 text-[#C1674A] text-sm underline hover:no-underline"
+              className="mt-2 text-primary text-sm underline hover:no-underline"
             >
               ← Neue Nachricht
             </button>
@@ -85,7 +85,7 @@ export default function ContactForm() {
           >
             {/* Name field */}
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="contact-name" className="text-xs font-semibold uppercase tracking-wider text-[#2C2C2C]/60">
+              <label htmlFor="contact-name" className="text-xs font-semibold uppercase tracking-wider text-text/60">
                 {t('contact.form.name')}
               </label>
               <input
@@ -102,7 +102,7 @@ export default function ContactForm() {
 
             {/* Email field */}
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="contact-email" className="text-xs font-semibold uppercase tracking-wider text-[#2C2C2C]/60">
+              <label htmlFor="contact-email" className="text-xs font-semibold uppercase tracking-wider text-text/60">
                 {t('contact.form.email')}
               </label>
               <input
@@ -119,7 +119,7 @@ export default function ContactForm() {
 
             {/* Message field */}
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="contact-message" className="text-xs font-semibold uppercase tracking-wider text-[#2C2C2C]/60">
+              <label htmlFor="contact-message" className="text-xs font-semibold uppercase tracking-wider text-text/60">
                 {t('contact.form.message')}
               </label>
               <textarea
@@ -137,7 +137,7 @@ export default function ContactForm() {
             {/* Submit button */}
             <button
               type="submit"
-              className="flex items-center justify-center gap-2 bg-[#C1674A] text-white py-3 px-6 rounded-sm text-sm font-medium tracking-wide hover:bg-[#a85539] transition-colors duration-200 self-start"
+              className="flex items-center justify-center gap-2 bg-primary text-white py-3 px-6 rounded-sm text-sm font-medium tracking-wide hover:opacity-90 transition-opacity duration-200 self-start"
             >
               <Send size={15} />
               {t('contact.form.send')}

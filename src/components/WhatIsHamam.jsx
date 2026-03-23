@@ -19,7 +19,7 @@ export default function WhatIsHamam() {
   const { t } = useTranslation()
 
   return (
-    <section className="py-20 md:py-28 bg-[#F5EFE6]">
+    <section className="py-20 md:py-28 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -32,13 +32,13 @@ export default function WhatIsHamam() {
             className="order-2 lg:order-1"
           >
             {/* Decorative accent line */}
-            <div className="w-10 h-0.5 bg-[#C1674A] mb-6" />
+            <div className="w-10 h-0.5 bg-primary mb-6" />
 
-            <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl font-semibold text-[#2C2C2C] leading-snug mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl font-semibold text-text leading-snug mb-6">
               {t('whatIsHamam.heading')}
             </h2>
 
-            <div className="flex flex-col gap-4 text-[#2C2C2C]/80 leading-relaxed">
+            <div className="flex flex-col gap-4 text-text/80 leading-relaxed">
               <p>{t('whatIsHamam.body1')}</p>
               <p>{t('whatIsHamam.body2')}</p>
               <p>{t('whatIsHamam.body3')}</p>
@@ -62,7 +62,7 @@ export default function WhatIsHamam() {
                 loading="lazy"
               />
               {/* Warm color tint overlay */}
-              <div className="absolute inset-0 bg-[#C1674A]/10 pointer-events-none" />
+              <div className="absolute inset-0 bg-primary/10 pointer-events-none" />
             </div>
           </motion.div>
         </div>

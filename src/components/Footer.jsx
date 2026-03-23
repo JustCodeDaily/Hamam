@@ -17,16 +17,16 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-[#2C2C2C] text-[#F5EFE6]">
+    <footer className="bg-text text-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {/* Brand column */}
           <div className="flex flex-col gap-4">
-            <h3 className="font-['Playfair_Display'] text-xl font-semibold text-[#D4A96A]">
+            <h3 className="font-heading text-xl font-semibold text-accent">
               Hamam Braunschweig
             </h3>
-            <p className="text-sm text-[#F5EFE6]/70 leading-relaxed">
+            <p className="text-sm text-background/70 leading-relaxed">
               {t('footer.tagline')}
             </p>
             {/* Instagram link */}
@@ -34,7 +34,7 @@ export default function Footer() {
               href="https://www.instagram.com/hamam_braunschweig/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#D4A96A] hover:text-white transition-colors duration-200 text-sm"
+              className="inline-flex items-center gap-2 text-accent hover:text-white transition-colors duration-200 text-sm"
               aria-label="Instagram"
             >
               <Instagram size={18} />
@@ -44,31 +44,31 @@ export default function Footer() {
 
           {/* Contact details */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-[#D4A96A]">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-accent">
               {t('footer.contact')}
             </h4>
-            <ul className="flex flex-col gap-3 text-sm text-[#F5EFE6]/80">
+            <ul className="flex flex-col gap-3 text-sm text-background/80">
               {/* Address */}
               <li className="flex items-start gap-2">
-                <MapPin size={15} className="mt-0.5 shrink-0 text-[#C1674A]" />
+                <MapPin size={15} className="mt-0.5 shrink-0 text-primary" />
                 <span>Baumschulenweg 2B<br />38104 Braunschweig</span>
               </li>
               {/* Phone */}
               <li className="flex items-center gap-2">
-                <Phone size={15} className="shrink-0 text-[#C1674A]" />
+                <Phone size={15} className="shrink-0 text-primary" />
                 <a
                   href="tel:+4917793265150"
-                  className="hover:text-[#D4A96A] transition-colors"
+                  className="hover:text-accent transition-colors"
                 >
                   0177 93 26 515
                 </a>
               </li>
               {/* Email */}
               <li className="flex items-center gap-2">
-                <Mail size={15} className="shrink-0 text-[#C1674A]" />
+                <Mail size={15} className="shrink-0 text-primary" />
                 <a
                   href="mailto:info@hamam-braunschweig.de"
-                  className="hover:text-[#D4A96A] transition-colors break-all"
+                  className="hover:text-accent transition-colors break-all"
                 >
                   info@hamam-braunschweig.de
                 </a>
@@ -78,27 +78,27 @@ export default function Footer() {
 
           {/* Quick links */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-[#D4A96A]">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-accent">
               {t('footer.quickLinks')}
             </h4>
-            <ul className="flex flex-col gap-2 text-sm text-[#F5EFE6]/80">
+            <ul className="flex flex-col gap-2 text-sm text-background/80">
               <li>
-                <Link to="/" className="hover:text-[#D4A96A] transition-colors">
+                <Link to="/" className="hover:text-accent transition-colors">
                   {t('nav.home')}
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-[#D4A96A] transition-colors">
+                <Link to="/services" className="hover:text-accent transition-colors">
                   {t('nav.services')}
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[#D4A96A] transition-colors">
+                <Link to="/contact" className="hover:text-accent transition-colors">
                   {t('nav.contact')}
                 </Link>
               </li>
               <li>
-                <Link to="/voucher" className="hover:text-[#D4A96A] transition-colors">
+                <Link to="/voucher" className="hover:text-accent transition-colors">
                   {t('nav.voucher')}
                 </Link>
               </li>
@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright bar */}
-        <div className="mt-12 pt-6 border-t border-[#F5EFE6]/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#F5EFE6]/40">
+        <div className="mt-12 pt-6 border-t border-background/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-background/40">
           <span>© {currentYear} {t('footer.copyright')}</span>
           <span>Inhaberin: Saliha-Nur Erden</span>
         </div>

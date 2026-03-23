@@ -31,8 +31,8 @@ export default function VoucherCard({
       transition={{ duration: 0.7, ease: 'easeOut' }}
       className={`relative rounded-sm overflow-hidden flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 ${
         highlighted
-          ? 'bg-[#C1674A] text-white'
-          : 'bg-white text-[#2C2C2C]'
+          ? 'bg-primary text-white'
+          : 'bg-surface text-text'
       }`}
     >
       {/* Bestseller / tag badge */}
@@ -40,8 +40,8 @@ export default function VoucherCard({
         <div
           className={`absolute top-4 right-4 text-xs font-semibold px-3 py-1 rounded-full ${
             highlighted
-              ? 'bg-white text-[#C1674A]'
-              : 'bg-[#D4A96A] text-white'
+              ? 'bg-white text-primary'
+              : 'bg-accent text-white'
           }`}
         >
           {tag}
@@ -50,27 +50,27 @@ export default function VoucherCard({
 
       <div className="p-7 md:p-9 flex flex-col flex-1 gap-5">
         {/* Gift icon */}
-        <div className={highlighted ? 'text-white/80' : 'text-[#C1674A]'}>
+        <div className={highlighted ? 'text-white/80' : 'text-primary'}>
           <Gift size={32} />
         </div>
 
         {/* Voucher name */}
-        <h3 className={`font-['Playfair_Display'] text-2xl font-semibold leading-snug ${
-          highlighted ? 'text-white' : 'text-[#2C2C2C]'
+        <h3 className={`font-heading text-2xl font-semibold leading-snug ${
+          highlighted ? 'text-white' : 'text-text'
         }`}>
           {name}
         </h3>
 
         {/* Description */}
         <p className={`text-sm leading-relaxed flex-1 ${
-          highlighted ? 'text-white/85' : 'text-[#2C2C2C]/70'
+          highlighted ? 'text-white/85' : 'text-text/70'
         }`}>
           {description}
         </p>
 
         {/* Price */}
-        <p className={`text-3xl font-bold font-['Playfair_Display'] ${
-          highlighted ? 'text-white' : 'text-[#C1674A]'
+        <p className={`text-3xl font-bold font-heading ${
+          highlighted ? 'text-white' : 'text-primary'
         }`}>
           {priceLabel}
         </p>
@@ -80,10 +80,10 @@ export default function VoucherCard({
           href={ctaUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className={`inline-flex items-center justify-center gap-2 py-3 px-6 rounded-sm text-sm font-medium tracking-wide transition-colors duration-200 ${
+          className={`inline-flex items-center justify-center gap-2 py-3 px-6 rounded-sm text-sm font-medium tracking-wide transition-opacity duration-200 ${
             highlighted
-              ? 'bg-white text-[#C1674A] hover:bg-[#F5EFE6]'
-              : 'bg-[#C1674A] text-white hover:bg-[#a85539]'
+              ? 'bg-background text-primary hover:opacity-90'
+              : 'bg-primary text-white hover:opacity-90'
           }`}
         >
           {ctaLabel}

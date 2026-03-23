@@ -14,7 +14,7 @@ export default function BookingBanner() {
   const { t } = useTranslation()
 
   return (
-    <section className="bg-[#C1674A] py-16 md:py-20">
+    <section className="bg-primary py-16 md:py-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ export default function BookingBanner() {
         className="max-w-4xl mx-auto px-4 sm:px-6 text-center"
       >
         {/* Main CTA text */}
-        <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl font-semibold text-white mb-3">
+        <h2 className="font-heading text-3xl md:text-4xl font-semibold text-white mb-3">
           {t('bookingBanner.text')}
         </h2>
 
@@ -37,7 +37,7 @@ export default function BookingBanner() {
           href={TREATWELL_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-[#C1674A] px-8 py-3.5 text-sm font-semibold tracking-wider uppercase hover:bg-[#F5EFE6] transition-colors duration-200 rounded-sm"
+          className="inline-block bg-background text-primary px-8 py-3.5 text-sm font-semibold tracking-wider uppercase hover:bg-surface transition-colors duration-200 rounded-sm"
         >
           {t('bookingBanner.button')}
         </a>
