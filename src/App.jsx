@@ -4,9 +4,11 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-hamam-cream font-body">
       <Header />
-      <Hero />
+      <main className="pt-20">
+        <Hero />
+      </main>
       <Footer />
     </div>
   );

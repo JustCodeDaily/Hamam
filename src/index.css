@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
+@theme {
+  --color-hamam-terracotta: #C4704B;
+  --color-hamam-terracotta-dark: #A85A38;
+  --color-hamam-stone: #F5F0EB;
+  --color-hamam-stone-dark: #E8E0D8;
+  --color-hamam-olive: #5C6B4F;
+  --color-hamam-olive-dark: #4A573F;
+  --color-hamam-gold: #C9A84C;
+  --color-hamam-charcoal: #2C2C2C;
+  --color-hamam-warm-gray: #6B6560;
+  --color-hamam-cream: #FFFCF7;
+  --color-hamam-dark-bg: #1A1614;
+  --color-hamam-dark-nav: #221E1B;
+  --color-hamam-dark-card: #2A2522;
+  --color-hamam-dark-card-hover: #332D29;
+  --color-hamam-dark-section: #211D1A;
+  --color-hamam-dark-text: #F5F0EB;
+  --color-hamam-dark-muted: #A89E96;
+  --color-hamam-dark-border: #3D3633;
+  --color-hamam-dark-footer: #151210;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +36,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
