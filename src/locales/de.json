@@ -1,0 +1,159 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Anwendungen",
+    "contact": "Kontakt",
+    "voucher": "Gutscheine",
+    "bookNow": "Termin buchen"
+  },
+  "hero": {
+    "label": "Privates Hamam · Braunschweig",
+    "heading": "Tauche ein in eine Welt der Stille",
+    "subtext": "Exklusives Hamam-Erlebnis nach Terminvereinbarung",
+    "cta": "Termin buchen"
+  },
+  "whatIsHamam": {
+    "heading": "Was ist ein Hamam?",
+    "body1": "Das Hamam ist ein traditionelles osmanisches Badehaus, das seit Jahrhunderten als Ort der Reinigung, Entspannung und Gemeinschaft dient.",
+    "body2": "Im warmen Dampf werden Körper und Geist gereinigt – ein ganzheitliches Ritual, das Wohlbefinden und innere Ruhe schenkt.",
+    "body3": "Bei Hamam Braunschweig erleben Sie diese uralte Tradition in einem privaten, exklusiven Rahmen – sorgfältig und liebevoll gestaltet."
+  },
+  "serviceTeaser": {
+    "heading": "Unsere Anwendungen",
+    "seeAll": "Alle Anwendungen anzeigen",
+    "card1": {
+      "name": "Hamam Ritual",
+      "description": "Vollständige Dampfbad-Zeremonie mit Peeling, Schaummassage und tiefer Entspannung.",
+      "duration": "90 Min"
+    },
+    "card2": {
+      "name": "Finnische Sauna",
+      "description": "Traditionelles Saunaerlebnis zur Entgiftung und Entspannung des gesamten Körpers.",
+      "duration": "60 Min"
+    },
+    "card3": {
+      "name": "Kosmetik",
+      "description": "Professionelle Schönheits- und Hautpflegebehandlungen für strahlende Haut.",
+      "duration": "Ab 45 Min"
+    }
+  },
+  "openingHours": {
+    "heading": "Öffnungszeiten",
+    "note": "Nach Terminvereinbarung",
+    "phone": "Telefon",
+    "days": {
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag"
+    },
+    "hours": {
+      "closed": "Ruhetag",
+      "weekdays": "11:00 – 19:00",
+      "friday": "11:00 – 20:00",
+      "saturday": "12:00 – 21:00",
+      "sunday": "12:00 – 18:00"
+    },
+    "fridayNote": "100% Frauenzeit",
+    "appointmentNote": "Alle Termine nur nach Vereinbarung. Rufen Sie uns an oder buchen Sie online."
+  },
+  "meetYourHost": {
+    "heading": "Ihre Gastgeberin",
+    "name": "Saliha-Nur Erden",
+    "title": "Master Wellness-Masseurin & Kosmetikerin",
+    "bio": "Mein Wunsch ist es, dass alle meine Gäste den Vorteil der Hamam-Anwendung erkennen und nachhaltig genießen. Ich empfehle eine Anwendung alle 3–4 Wochen.",
+    "bio2": "Mit jahrelanger Erfahrung in der osmanischen Badekultur und modernen Wellnessbehandlungen schaffe ich für jeden Gast ein individuelles, unvergessliches Erlebnis."
+  },
+  "services": {
+    "heading": "Unsere Anwendungen",
+    "subheading": "Exklusive Wellness-Erlebnisse für Körper und Seele",
+    "bookNow": "Jetzt buchen",
+    "from": "ab",
+    "min": "Min",
+    "items": {
+      "hamam": {
+        "name": "Hamam Ritual",
+        "description": "Das vollständige osmanische Baderitual: Dampfbad, Ganzkörper-Peeling auf dem warmen Nabelstein, luxuriöse Schaummassage und tiefe Entspannung."
+      },
+      "hamamKosmetik": {
+        "name": "Hamam + Kosmetik",
+        "description": "Kombination aus dem klassischen Hamam-Ritual und einer professionellen Kosmetikbehandlung für ein umfassendes Wellness-Erlebnis."
+      },
+      "sauna": {
+        "name": "Finnische Sauna",
+        "description": "Traditionelles finnisches Saunaerlebnis zur Entgiftung, Verbesserung der Durchblutung und tiefen Entspannung des Geistes."
+      },
+      "peeling": {
+        "name": "Ganzkörper Peeling",
+        "description": "Intensives Ganzkörper-Peeling mit einem traditionellen Kese-Handschuh – für samtweiche, strahlend schöne Haut."
+      },
+      "schaum": {
+        "name": "Schaummassage",
+        "description": "Verwöhnende Ganzkörpermassage mit reichhaltigem, duftendem Seifenschaum – entspannend und belebend zugleich."
+      }
+    }
+  },
+  "bookingBanner": {
+    "text": "Bereit für dein Erlebnis?",
+    "subtext": "Sichere dir jetzt deinen Wunschtermin.",
+    "button": "Jetzt buchen"
+  },
+  "contact": {
+    "heading": "Kontakt",
+    "subheading": "Wir freuen uns auf Ihre Nachricht",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "instagram": "Instagram",
+    "openingHours": "Öffnungszeiten",
+    "form": {
+      "heading": "Nachricht senden",
+      "name": "Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "ihre@email.de",
+      "message": "Nachricht",
+      "messagePlaceholder": "Schreiben Sie uns...",
+      "send": "Nachricht senden",
+      "success": "Ihre Nachricht wurde gesendet! Wir melden uns bald bei Ihnen.",
+      "successSubtext": "Vielen Dank für Ihre Kontaktaufnahme."
+    },
+    "mapHeading": "So finden Sie uns"
+  },
+  "voucher": {
+    "heading": "Verschenke Entspannung",
+    "subheading": "Schenke deinen Liebsten ein unvergessliches Wellness-Erlebnis – das perfekte Geschenk für jeden Anlass.",
+    "buyButton": "Gutschein kaufen",
+    "orderButton": "Jetzt bestellen",
+    "validFor": "Gültig für",
+    "validityPeriod": "1 Jahr gültig",
+    "savingsLabel": "Sie sparen",
+    "card1": {
+      "name": "Geldwert Gutschein",
+      "description": "Gültig für alle Anwendungen. Sie wählen den Betrag frei.",
+      "priceRange": "€30 – €500",
+      "tag": "Flexibel"
+    },
+    "card2": {
+      "name": "Sauna Zehnerkarte",
+      "description": "10 Saunagänge. 1 Jahr gültig. 60% sparen gegenüber dem Einzelpreis.",
+      "price": "€300",
+      "tag": "Bestseller"
+    },
+    "cta": {
+      "note": "Gutscheine werden als PDF gesendet oder per Post.",
+      "subNote": "Bei Fragen stehen wir Ihnen gerne telefonisch unter 0177 93 26 515 zur Verfügung."
+    }
+  },
+  "footer": {
+    "tagline": "Privates osmanisches Badehaus in Braunschweig",
+    "quickLinks": "Schnelllinks",
+    "followUs": "Folgen Sie uns",
+    "copyright": "Hamam Braunschweig. Alle Rechte vorbehalten.",
+    "address": "Adresse",
+    "contact": "Kontakt"
+  }
+}

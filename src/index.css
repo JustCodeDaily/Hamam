@@ -1,0 +1,45 @@
+/*
+  Global styles for Hamam Braunschweig.
+  Tailwind v4 is imported via the @tailwindcss/vite plugin.
+  Custom theme tokens (colors, fonts) are declared here using @theme.
+*/
+
+@import "tailwindcss";
+
+@theme {
+  /* Brand color palette */
+  --color-background: #F5EFE6;
+  --color-primary: #C1674A;
+  --color-accent: #D4A96A;
+  --color-text: #2C2C2C;
+  --color-surface: #EAD9C6;
+
+  /* Font families loaded via Google Fonts in index.html */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+/* Base resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #F5EFE6;
+  color: #2C2C2C;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
